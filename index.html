@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+            integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+            crossorigin="anonymous" />
+        <link rel="stylesheet" type="text/css" href="./public/css/main.css" />
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500&family=Montserrat&family=Roboto+Slab&display=swap"
+            rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+        <title>ALARM CLOCK</title>
+        <link rel="icon" href="https://freeiconshop.com/wp-content/uploads/edd/alarm-flat.png" type="image/x-icon">
+    </head>
+
+    <body>
+        <header>
+            <img src="https://freeiconshop.com/wp-content/uploads/edd/alarm-flat.png" alt="Alarm Clock Picture"
+                width="60px" height="60px">
+            <h1 class="animate__animated animate__flipInX">ALARM CLOCK</h1>
+        </header>
+        <div class="container">
+            <form class="animate__animated animate__lightSpeedInRight">
+                <select class="form-select form-select-lg mb-3" id="date" aria-label=".form-select-lg example">
+                    <option selected>Select The Date From This</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                </select>
+                <select class="form-select form-select-lg mb-3" id="month" aria-label=".form-select-lg example">
+                    <option selected>Select The Month From This</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <div class="form-group">
+                    <input type="text" class="form-control shadow-none" id="year" aria-describedby="emailHelp"
+                        placeholder="Enter The Year You Want To Set In YYYY Format">
+                </div>
+                <select class="form-select form-select-lg mb-3" id="hour" aria-label=".form-select-lg example">
+                    <option selected>Select The Hour From This</option>
+                    <option value="00">00</option>
+                    <option value="01">01</option>
+                    <option value="02">02</option>
+                    <option value="03">03</option>
+                    <option value="04">04</option>
+                    <option value="05">05</option>
+                    <option value="06">06</option>
+                    <option value="07">07</option>
+                    <option value="08">08</option>
+                    <option value="09">09</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                    <option value="13">13</option>
+                    <option value="14">14</option>
+                    <option value="15">15</option>
+                    <option value="16">16</option>
+                    <option value="17">17</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                </select>
+                <div class="form-group">
+                    <input type="text" class="form-control shadow-none" id="minutes" aria-describedby="emailHelp"
+                        placeholder="Enter The Minutes You Want To Set In MM Format">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control shadow-none" id="seconds" aria-describedby="emailHelp"
+                        placeholder="Enter The Seconds You Want To Set In SS Format">
+                </div>
+                <div class="form-group">
+                    <input type="text" class="form-control" id="snoozed" aria-describedby="emailHelp"
+                        placeholder="Enter The Snooze Time You Want To Set In Minutes">
+                </div>
+                <div class="buttons">
+                    <button id="start" type="submit" class="btn btn-primary" style="font-family:'Cinzel',serif;">SET
+                        ALARM</button>
+                    <button id="stop" type="submit" class="btn btn-success" style="font-family:'Cinzel',serif;">STOP
+                        ALARM</button>
+                    <button id="snooze" class="btn btn-info" style="font-family:'Cinzel',serif;">SNOOZE ALARM</button>
+                </div>
+            </form>
+
+        </div>
+
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+            integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+            crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+    </body>
+    <script type="text/javascript" src="./main.js"></script>
+
+</html>
